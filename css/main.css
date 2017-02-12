@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css?family=Exo:400,700|Open+Sans');
+html{
+	color: #898989;
+	font-family: 'Open Sans', sans-serif;
+
+}
+p{
+	font-size: 0.8em;
+	font-size: 16px;
+	line-height: 1.5;
+}
+h1,h2,h3,h4{
+	color: #0f1631;
+	font-family: 'Exo', sans-serif;
+
+}
+h1{
+	font-size: 2em;
+	margin:10px 0;
+	text-transform: uppercase;
+}
+h2{
+	font-size: 1.7em;
+	margin-top: 10px;
+	text-transform: uppercase;
+}
+h3{
+	font-size: 1.4em;
+	margin-top: 10px;
+	text-transform: uppercase;
+}
+/*structure / grid*/
+.panel{
+	width: 100vw;
+	height: 100vh;
+	background: #f1f1f1;
+	overflow: hidden;
+}
+.half{
+	height: 50vh;
+	float: left;
+	position: relative;
+	width: 100vw;
+}
+/*intro*/
+.intro-profile{
+	background: url('../img/fbpro2.jpg');
+	background-size: cover;
+	background-position: center;
+}
+.intro-copy{
+	height: auto;
+	left: 50%;
+	position: absolute;
+	text-align: center;
+	top: 50%;
+    transform: translate(-50%, -50%);
+	width: 80%;
+}
+/*showcase*/
+.showcase{
+	background: #ff2390;
+}
+.showcase h2{
+	padding: 20px 0;
+	text-align: center;
+}
+.project-cell{
+	width: 50%;
+	height: 50%;
+	float: left;
+	position: relative;
+	background-size: cover;
+	background-position: center;
+}
+.project-info{
+	background: #ff2390;
+	border: 2px solid #fff;
+	height: auto;
+	position: absolute;
+	padding: 5px;
+	text-align: center;
+	top: 75%;
+    transform: translate(0, -75%);
+	width: 75%;
+
+
+}
+.project-info p{
+	color: #fff;
+}
+@media only screen and (min-width: 1020px) {
+	h1{
+		font-size: 2em;
+		margin:10px 0;
+		text-transform: uppercase;
+	}
+	.half{
+		height: 100vh;
+		width: 50vw;
+
+	}
+	.showcase{
+		height: 50vh;
+	}
+	.project-cell{
+		width: 25%;
+		height: 25%;
+		float: left;
+		position: relative;
+
+	}
+}
