@@ -4,6 +4,11 @@ html{
 	font-family: 'Open Sans', sans-serif;
 
 }
+a{
+	color: #ff2390;
+	text-transform: uppercase;
+	text-decoration: none;
+}
 p{
 	font-size: 0.8em;
 	font-size: 16px;
@@ -29,6 +34,32 @@ h3{
 	margin-top: 10px;
 	text-transform: uppercase;
 }
+.nav{
+	width:30%;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	z-index: 100;
+}
+.nav ul{
+
+}
+.nav li{
+	width: 33.3%;
+	float: left;
+	display: inline;
+}
+.nav a{
+	float: right;
+	text-align: center;
+	width: 100%;
+	padding: 5px 0px;
+	transition: all 0.5s ease;
+}
+.nav a:hover{
+	color: white;
+	background: #ff2390;
+}
 /*structure / grid*/
 .panel{
 	width: 100vw;
@@ -44,7 +75,7 @@ h3{
 }
 /*intro*/
 .intro-profile{
-	background: url('../img/fbpro2.jpg');
+	background: url('../img/kitty-project6.jpg');
 	background-size: cover;
 	background-position: center;
 }
@@ -62,8 +93,20 @@ h3{
 	background: #ff2390;
 }
 .showcase h2{
+	color: #fff;
 	padding: 20px 0;
 	text-align: center;
+}
+.overLay{
+	height: 100%;
+	width:100%;
+	display: block;
+	background:#000;
+	opacity: 0.5;
+	transition: all 0.5s ease;
+}
+.overLay:hover{
+	opacity: 0.1;
 }
 .project-cell{
 	width: 50%;
@@ -73,9 +116,9 @@ h3{
 	background-size: cover;
 	background-position: center;
 }
+
 .project-info{
-	background: #ff2390;
-	border: 2px solid #fff;
+	background: #fff;
 	height: auto;
 	position: absolute;
 	padding: 5px;
@@ -86,8 +129,11 @@ h3{
 
 
 }
+.project-info h3{
+	color: #ff2390;
+}
 .project-info p{
-	color: #fff;
+	color: #0f1632;
 }
 @media only screen and (min-width: 1020px) {
 	h1{
@@ -105,7 +151,7 @@ h3{
 	}
 	.project-cell{
 		width: 25%;
-		height: 25%;
+		height: 65%;
 		float: left;
 		position: relative;
 
